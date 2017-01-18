@@ -14,6 +14,9 @@
 @property(nonatomic,weak) IBOutlet UILabel *timeLabel;
 @property(nonatomic,weak) IBOutlet UITextField *text;
 -(IBAction)buttonPressed:(id)sender;
+-(IBAction)tapGestureRecogniazerDidRecognizeTap:(id)sender;
+
+
 
 
 @end

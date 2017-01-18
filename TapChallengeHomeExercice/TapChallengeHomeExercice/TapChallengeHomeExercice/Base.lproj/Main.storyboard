@@ -45,6 +45,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" red="1" green="0.43894124179999999" blue="0.1096224673" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H5E-UN-9P8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93677835667343867" green="1" blue="0.77112955034108932" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

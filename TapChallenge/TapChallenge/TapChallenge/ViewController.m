@@ -66,11 +66,33 @@
 
 #pragma mark - Actions
 
+
+-(IBAction)tapGestureRecogniazerDidRecognizeTap:(id)sender{
+    
+    //loggo in console il valore dei taps effettuati;
+    NSLog(@"buttonPressed: %i", _tapsCount);
+    
+    
+    // crea il timer se non c'è già
+    if(_gameTimer == nil){
+        _gameTimer = [NSTimer scheduledTimerWithTimeInterval:GAMETIMER target:self selector:@selector(timerTick) userInfo:nil repeats:true];
+    }
+    
+    //incremento il mio taps counter
+    _tapsCount++;
+    
+    
+    //aggiorno il valore della label
+    [self.tapsCountLabel setText:[NSString stringWithFormat:@"%i",_tapsCount]];
+    
+
+}
+
 -(IBAction)buttonPressed:(id)sender{
     
     
     //loggo in console il valore dei taps effettuati;
-    NSLog(@"buttonPressed: %i", _tapsCount);
+    /*NSLog(@"buttonPressed: %i", _tapsCount);
     
     
     // crea il timer se non c'è già
@@ -83,7 +105,7 @@
     
     
     //aggiorno il valore della label
-    [self.tapsCountLabel setText:[NSString stringWithFormat:@"%i",_tapsCount]];
+    [self.tapsCountLabel setText:[NSString stringWithFormat:@"%i",_tapsCount]];*/
     
     
     
