@@ -8,13 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "ScoreTableViewController.h"
+
+@interface GameViewController : UIViewController <ScoreTableViewDelegate>
 
 @property(nonatomic,weak) IBOutlet UILabel *tapsCountLabel;
+
 @property(nonatomic,weak) IBOutlet UILabel *timeLabel;
+
 @property(nonatomic,weak) IBOutlet UITextField *text;
+
 -(IBAction)buttonPressed:(id)sender;
--(IBAction)tapGestureRecogniazerDidRecognizeTap:(id)sender;
+
+-(IBAction)tapGestureRecognizerDidRecognizeTap:(id)sender;
 
 
 
